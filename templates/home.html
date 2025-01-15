@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Atomic Habits Q&A</title>
+  <!-- Optional: Use a Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+  <h1>Ask About “Atomic Habits”</h1>
+
+  <form method="POST" action="/">
+    <label for="question">Enter your question:</label>
+    <input type="text" id="question" name="question" required>
+    <button type="submit">Ask</button>
+  </form>
+
+  {% if answer %}
+    <div class="answer">
+      <h2>Answer:</h2>
+      <p>{{ answer }}</p>
+    </div>
+  {% endif %}
+</div>
+
+</body>
+</html>

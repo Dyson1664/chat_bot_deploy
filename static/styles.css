@@ -1,0 +1,90 @@
+/* General Reset & Body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;  /* Matches Google Font in <head> */
+  background: linear-gradient(135deg, #e9ecef, #f8f9fa);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%; /* Increase the width of the container */
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Label & Input */
+label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button */
+button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Answer Box */
+.answer {
+  width: 100%;
+  min-height: 200px; /* Reserve space for the answer */
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  overflow-y: auto; /* Allow scrolling if content exceeds the height */
+}
+
+.answer h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
